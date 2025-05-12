@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && aws s3 sync dist/ s3://imakesite/templates/pepsi --delete"
+    "deploy": "npm run build && aws s3 sync out/ s3://imakesite/templates/pepsi --delete"
   },
   "dependencies": {
     "@headlessui/react": "^2.0.3",
