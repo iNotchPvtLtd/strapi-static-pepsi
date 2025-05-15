@@ -42,7 +42,7 @@ export function getStrapiURL() {
   // return process.env.STRAPI_BASE_URL ?? "http://localhost:1337";
   // return process.env.STRAPI_BASE_URL ?? "https://inotch-backend.onrender.com";
   // return process.env.STRAPI_BASE_URL ?? "https://inotch-backend-923z.onrender.com";
-  return process.env.STRAPI_BASE_URL ?? "http://13.60.5.249:1337";
+  return process.env.STRAPI_BASE_URL ?? "http://13.50.32.213:1337";
   
 }
 

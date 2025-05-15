@@ -11,7 +11,8 @@ import { Navbar } from "@/components/Navbar";
 import { SectionHeading } from "@/components/SectionHeading";
 import { Testimonials } from "@/components/Testimonials";
 import { Video } from "@/components/Video";
-
+import './../app/globals.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
     getBenefitsData, 
     getContentWithImageData,

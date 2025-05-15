@@ -3,22 +3,22 @@ import type { PageProps } from "@/types";
 
 import { Container } from "@/components/Container";
 
-// const pages = {
-//   data: [
-//     {
-//       id: 1,
-//       slug: "features",
-//     },
-//     {
-//       id: 2,
-//       slug: "pricing",
-//     },
-//     {
-//       id: 3,
-//       slug: "company",
-//     },
-//   ],
-// };
+const pages = {
+  data: [
+    {
+      id: 1,
+      slug: "features",
+    },
+    {
+      id: 2,
+      slug: "pricing",
+    },
+    {
+      id: 3,
+      slug: "company",
+    },
+  ],
+};
 
 interface StaticParamsProps {
   id: number;
@@ -30,28 +30,28 @@ export async function generateStaticParams() {
 //     slug: page.slug,
 //   }));
 
-  const pages = [
-    { id: 1, slug: 'page1' },
-    { id: 2, slug: 'page2' },
-    { id: 3, slug: 'page3' },
-    // { id: 4, slug: 'page4' },
-    // { id: 5, slug: 'page5' },
-    // { id: 6, slug: 'page6' },
-    // { id: 7, slug: 'page7' },
-    // { id: 8, slug: 'page8' },
-    // { id: 9, slug: 'page9' },
-    // { id: 10, slug: 'page10' },
-  ];
+  // const pages = [
+  //   { id: 1, slug: 'page1' },
+  //   { id: 2, slug: 'page2' },
+  //   { id: 3, slug: 'page3' },
+  //   // { id: 4, slug: 'page4' },
+  //   // { id: 5, slug: 'page5' },
+  //   // { id: 6, slug: 'page6' },
+  //   // { id: 7, slug: 'page7' },
+  //   // { id: 8, slug: 'page8' },
+  //   // { id: 9, slug: 'page9' },
+  //   // { id: 10, slug: 'page10' },
+  // ];
 
-  console.log("Pepsi template Static Pages Slug:", pages);
+  // console.log("Pepsi template Static Pages Slug:", pages);
 
-  return pages.map((page: { slug: string }) => ({
+  // return pages.map((page: { slug: string }) => ({
+  //   slug: page.slug,
+  // }));
+
+    return pages.data.map((page: Readonly<StaticParamsProps>) => ({
     slug: page.slug,
   }));
-
-//     return pages.data.map((page: Readonly<StaticParamsProps>) => ({
-//     slug: page.slug,
-//   }));
 }
 
 
