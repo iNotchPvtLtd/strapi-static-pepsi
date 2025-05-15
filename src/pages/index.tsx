@@ -109,33 +109,4 @@ export async function getStaticProps() {
         </Container>
       );
   
-
-//   const res = await fetch(`https://inotch-backend.onrender.com/api/teslanew?${query}`);
-//   // const res = await fetch("http://13.60.5.249:1337/api/tesla");
-//   const json = await res.json();
- 
-
-// export default function HomePage({ data }: { data: TeslaData }): React.ReactElement {
-//   const { "hero_slides": heroSlides, "car_models": carModels, features } = data;
-
-  
-
-  
-//   export default function Home({ benefitsData }) {
-//     return (
-//       <Container>
-//         <Hero />
-//         <SectionHeading />
-//         <Benefits benefitsData={benefitsData} />
-//         <ContentWithImage />
-//         <SectionHeading />
-//         <Video />
-//         <SectionHeading />
-//         <Testimonials />
-//         <SectionHeading />
-//         <Faq />
-//         <Cta />
-//       </Container>
-//     );
-//   }
     }
