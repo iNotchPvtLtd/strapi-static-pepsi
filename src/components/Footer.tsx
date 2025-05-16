@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import { StrapiImage } from "./StrapiImage";
 
-import verselImage from  './../../public/vercel.svg';
+import auth from  './../../public/authlogo.png';
 
 
 
@@ -99,19 +99,19 @@ export function Footer({ footerData }: Readonly<FooterComponentProps>) {
             </div>
 
             <div className="mt-5">
-              <a
-                href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
+              {/* <a
+                href="https://inotchglobal.com/"
                 target="_blank"
                 rel="noopener"
                 className="relative block w-44"
-              >
+              > */}
                 <Image
-                  src={verselImage}
+                  src={auth}
                   alt="Powered by iNotch Private Limited"
-                  width="212"
-                  height="44"
+                  width={150}
+                  height={44}
                 />
-              </a>
+              {/* </a> */}
             </div>
           </div>
 
@@ -160,19 +160,19 @@ export function Footer({ footerData }: Readonly<FooterComponentProps>) {
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <a href="https://inotchglobal.com/" target="_blank" rel="noopener">
-            MakeMyWebsite.
+            iMakeSite.
           </a>{" "}
           updated by{" "}
           <a
-            href="https://youtube.com/c/codingafterthirty"
+            href="https://inotchglobal.com/"
             target="_blank"
             rel="noopener"
           >
-            Paul
+            Saravana Goutham
           </a>{" "}
           Illustrations from{" "}
-          <a href="https://www.glazestock.com/" target="_blank" rel="noopener ">
-            Glazestock
+          <a href="https://inotchglobal.com/" target="_blank" rel="noopener ">
+          iNotch Pvt Ltd.
           </a>
         </div>
       </Container>
@@ -203,7 +203,7 @@ const Backlink = () => {
         />
       </svg>
 
-      <span>MakeMyWebsite</span>
+      <span>iNotch Private Limited</span>
     </a>
   );
 };
