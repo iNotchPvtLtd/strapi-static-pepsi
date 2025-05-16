@@ -7,6 +7,8 @@ import Image from "next/image";
 import { Container } from "@/components/Container";
 import { StrapiImage } from "./StrapiImage";
 
+import {verselImage} from  './../../public/vercel.svg';
+
 
 
 interface FooterProps {
@@ -104,8 +106,8 @@ export function Footer({ footerData }: Readonly<FooterComponentProps>) {
                 className="relative block w-44"
               >
                 <Image
-                  src="/img/vercel.svg"
-                  alt="Powered by Asapu"
+                  src={verselImage}
+                  alt="Powered by iNotch Private Limited"
                   width="212"
                   height="44"
                 />
